@@ -11,12 +11,22 @@ console.log(notify)
 console.log(notify_items_total)
 console.log(save_button)
 
+var albums_selected = []
+var i = 0
+while (i<albums.length){
+    albums[i].onclick = function(e){
+        console.log('clicked')
+    }
+    console.log(i)
+    i++
+}
+
 //   create an array and add albums
 // when you click on an album add class selected
 // which is a css that adds some background
-document.addEventListener('click', function handleClick(event) {
-    event.target.classList.add('selected');
-  });
+// document.addEventListener('click', function handleClick(event) {
+//     event.target.classList.add('selected');
+//   });
   
 
   
