@@ -14,7 +14,7 @@ console.log(save_button)
 var albums_selected = []
 var i = 0
 while (i<albums.length){
-    albums[i].onclick = function(e){
+    albums[i].onclick = function(){
         // grabbing tittle text content
         // always grab the exact class in javascript
         var album_title = this.querySelector('.title').textContent
@@ -35,6 +35,7 @@ while (i<albums.length){
 
     }
 
+    // Function to click and show save icon
     save_button[0].onclick = function (e){
 
         notify_items_total.textContent = albums_selected.length + ' Items were saved'
