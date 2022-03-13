@@ -6,6 +6,7 @@ var notify_items_total = document.querySelector('.items-total')
 var albums = document.querySelectorAll('.album')
 var save_button = document.querySelectorAll('.button')
 
+// making sure we grabbed them
 console.log(albums)
 console.log(notify)
 console.log(notify_items_total)
