@@ -20,13 +20,31 @@ while (i<albums.length){
         var album_title = this.querySelector('.title').textContent
         console.log(album_title)
 
+        // control flow to add class
         if (this.classList.contains('selected') == false) {
             this.classList.add('selected')
+            albums_selected.push(album_title)
+
         } else {
             this.classList.remove('selected')
+            albums_selected.pop(album_title)
         }
+        console.log(albums_selected)
+
+        
+
     }
-    console.log(i)
+
+    save_button[0].onclick = function (e){
+
+        notify_items_total.textContent = albums_selected.length + ' Items were saved'
+
+        if (notify.classList.contains('active') == false){
+            notify.classList.add('active')
+        }
+
+    }
+    
     i++
 }
 
