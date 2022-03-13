@@ -15,7 +15,16 @@ var albums_selected = []
 var i = 0
 while (i<albums.length){
     albums[i].onclick = function(e){
-        console.log('clicked')
+        // grabbing tittle text content
+        // always grab the exact class in javascript
+        var album_title = this.querySelector('.title').textContent
+        console.log(album_title)
+
+        if (this.classList.contains('selected') == false) {
+            this.classList.add('selected')
+        } else {
+            this.classList.remove('selected')
+        }
     }
     console.log(i)
     i++
