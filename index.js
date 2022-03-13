@@ -50,6 +50,9 @@ while (i<albums.length){
     i++
 }
 
+
+
+// My own try to write this without help
 //   create an array and add albums
 // when you click on an album add class selected
 // which is a css that adds some background
